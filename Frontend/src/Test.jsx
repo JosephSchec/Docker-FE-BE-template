@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 
 export default function Test() {
-    const [s, setS] = useState("nope")
+    const [s, setS] = useState("Sorry not connected")
     useEffect(() => {
         (async () => {
             const a = await fetch('http://localhost:3001/');
@@ -17,7 +17,7 @@ export default function Test() {
     }, [])
 
     return (
-        <div>{s}</div>
+        <div>{s} is working </div>
     )
 }
 

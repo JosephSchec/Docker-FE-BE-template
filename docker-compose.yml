@@ -14,7 +14,7 @@ services:
     stdin_open: true
     build:
       dockerfile: Dockerfile
-      context: ./client
+      context: ./Frontend
     volumes:
       - /app/node_modules
-      - ./client:/app
+      - ./Frontend:/app
